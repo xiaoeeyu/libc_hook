@@ -10,6 +10,7 @@ function beginAnti(){
         })
     })
 }
+
 function hook_pthread(){
     var pthread_create_addr = Module.findExportByName("libc.so", 'pthread_create')
     var time_addr = Module.findExportByName("libc.so", 'time')
